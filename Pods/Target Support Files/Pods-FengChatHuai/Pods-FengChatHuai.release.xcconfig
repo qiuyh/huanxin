@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/HappyDNS" "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD" "$PODS_CONFIGURATION_BUILD_DIR/MGSwipeTableCell" "$PODS_CONFIGURATION_BUILD_DIR/MJRefresh" "$PODS_CONFIGURATION_BUILD_DIR/Qiniu" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Hyphenate_CN"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Hyphenate_CN/HyphenateFullSDK/lib"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/HappyDNS/HappyDNS.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MGSwipeTableCell/MGSwipeTableCell.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MJRefresh/MJRefresh.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Qiniu/Qiniu.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Hyphenate_CN"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"HyphenateFullSDK_arm64" -l"HyphenateFullSDK_armv7" -l"HyphenateFullSDK_i386" -l"HyphenateFullSDK_x86_64" -l"c++" -l"iconv" -l"sqlite3" -l"stdc++.6.0.9" -l"z" -framework "AFNetworking" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreMedia" -framework "HappyDNS" -framework "ImageIO" -framework "MBProgressHUD" -framework "MGSwipeTableCell" -framework "MJRefresh" -framework "MobileCoreServices" -framework "Qiniu" -framework "SDWebImage"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
